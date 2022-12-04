@@ -1,0 +1,52 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+#aquamarine {
+   color: aquamarine;
+}
+#red {
+   color: red;
+}
+#pink {
+   color: pink;
+}
+#gray {
+   color: gray;
+}
+body {
+   background-color: darkslategray;
+   color: azure;
+}
+#cent {
+   color: aquamarine;
+   height: 90vh;
+}
+#img {
+   width: 30%;
+   border-radius: 50%;
+   margin: 20px;
+}
+#title {
+   font-weight: 700;
+   margin: 10%;
+}
+p, h2 {
+   font-family: "dejavu sans mono", monospace;
+   margin: 5%;
+}
+a {
+   text-decoration: none;
+   color: azure;
+}
+#left {
+   float: left;
+}
+#rules {
+   text-align: left;
+}
+#copyright {
+   font-size: small;
+   color: grey;
+}
