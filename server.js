@@ -40,7 +40,7 @@ serv.on("request",(req,res)=>{
             var data = readFileSync("./level1.html");
             res.end(data);
             break;
-        case "/2008":
+        case "/2007":
             var data = readFileSync("./level2.html");
             res.end(data)
             break;
@@ -97,11 +97,9 @@ serv.on("request",(req,res)=>{
  
     req.on('end', function(){    
         post = querystring.parse(post);
-        if ( post.answer == 'Go') {
+        if ( post.Go != undefined) {
+            res.writeHead(200, {'Server': 'Node.js'});
             var data = readFileSync("./answer.html");
-            res.end(data);
-        } else if (post.answer != undefined) {
-            var data = readFileSync("./err.html");
             res.end(data);
         } else {
             var data = readFileSync("./level8.html");
