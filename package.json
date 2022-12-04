@@ -1,0 +1,27 @@
+{
+  "name": "nazo_for_web",
+  "version": "1.0.0",
+  "description": "nazo game",
+  "main": "server.js",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/junyu33/nazo_for_web.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "junyu33",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junyu33/nazo_for_web/issues"
+  },
+  "homepage": "https://github.com/junyu33/nazo_for_web#readme"
+}
