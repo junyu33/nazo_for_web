@@ -48,7 +48,7 @@ serv.on("request",(req,res)=>{
             var data = readFileSync("./level3.html");
             res.end(data)
             break;
-        case "/dejavu_sans_mono":
+        case "/Lucida_Console":
             var data = readFileSync("./level4.html");
             res.end(data);
             break;
@@ -85,6 +85,7 @@ serv.on("request",(req,res)=>{
             break;
         default:
             var data = readFileSync("./err.html");
+            res.writeHead(404, {"Content-Type":"text/html; charset=utf-8"});
             res.end(data);
             break;  
     }
@@ -96,11 +97,14 @@ serv.on("request",(req,res)=>{
  
     req.on('end', function(){    
         post = querystring.parse(post);
-        if (post.answer != undefined && post.answer == 'Go') {
+        if ( post.answer == 'Go') {
             var data = readFileSync("./answer.html");
             res.end(data);
-        } else {
+        } else if (post.answer != undefined) {
             var data = readFileSync("./err.html");
+            res.end(data);
+        } else {
+            var data = readFileSync("./level8.html");
             res.end(data);
         }
         return;
