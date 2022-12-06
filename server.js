@@ -98,7 +98,6 @@ serv.on("request",(req,res)=>{
     req.on('end', function(){    
         post = querystring.parse(post);
         if ( post.Go != undefined) {
-            res.writeHead(200, {'my_server': 'Node.js'});
             var data = readFileSync("./answer.html");
             res.end(data);
         } else {
