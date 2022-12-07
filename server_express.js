@@ -93,6 +93,7 @@ app.post('/31337', function(req, res) {
    }
 });
 app.get('*', function(req, res) {
+   res.writeHead(404, {'Content-Type': 'text/html'})
    var data = readFileSync("./err.html");
    res.end(data);
 });
