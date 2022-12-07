@@ -28,7 +28,7 @@ def catch_all(path=""):
 
 
 def challenge():
-    app.run(challenge_host, 8888)
+    app.run(challenge_host, 8080)
 
 
 challenge()
