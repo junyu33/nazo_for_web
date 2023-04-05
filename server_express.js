@@ -48,3 +48,4 @@ app.get('*', function(req, res) {
 
 app.listen("1234",()=>{
     console.log("serv running on http://127.0.0.1:1234");
+});
