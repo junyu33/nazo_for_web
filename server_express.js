@@ -10,10 +10,10 @@ app.use(bodyParser());
 
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : '47.114.45.27',
+  host     : '20.191.185.135',
   user     : 'root',
-  password : 'WD7bimhhX7fEa3fJ',
-  database : 'ANSWER'
+  password : 'KCrsax4aesEydYeH',
+  database : 'nazo_answer'
 });
 
 connection.connect();
@@ -46,6 +46,5 @@ app.get('*', function(req, res) {
 
 
 
-app.listen("80",()=>{
-    console.log("serv running on http://127.0.0.1:80");
-});
+app.listen("1234",()=>{
+    console.log("serv running on http://127.0.0.1:1234");
