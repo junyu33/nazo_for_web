@@ -8,81 +8,16 @@ var app = express();
 var bodyParser = require('body-parser');
 app.use(bodyParser());
 
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'KCrsax4aesEydYeH',
+  database : 'nazo_answer'
+});
 
-app.get('/', function(req, res) {
-    var data = readFileSync("./index.html");
-    res.end(data);
-});
-app.get('/css/style.css', function(req, res) {
+connection.connect();
 
-      var data = readFileSync("./css/style.css");
-      res.end(data);
-});
-app.get('/img/code.png', function(req, res) {
-
-      var data = readFileSync("./img/code.png");
-      res.end(data);
-});
-app.get('/img/level10.png', function(req, res) {
-   var data = readFileSync("./img/level10.png");
-   res.end(data);
-});
-app.get('/js/ajax.js', function(req, res) {
-   var data = readFileSync("./js/ajax.js");
-   res.end(data);
-});
-app.get('/favicon.ico', function(req, res) {
-   var data = readFileSync("./favicon.ico");
-   res.end(data);
-});
-app.get('/level1', function(req, res) {
-   var data = readFileSync("./level1.html");
-   res.end(data);
-});
-app.get('/2007', function(req, res) {
-   var data = readFileSync("./level2.html");
-   res.end(data);
-});
-app.get('/class', function(req, res) {
-   var data = readFileSync("./level3.html");
-   res.end(data);
-});
-app.get('/Lucida_Console', function(req, res) {
-   var data = readFileSync("./level4.html");
-   res.end(data);
-});
-app.get('/80439751', function(req, res) {
-   var data = readFileSync("./level5.html");
-   res.end(data);
-});
-app.get('/absolute', function(req, res) {
-   var data = readFileSync("./level6.html");
-   res.end(data);
-});
-app.get('/NaN&0', function(req, res) {
-   var data = readFileSync("./level7.html");
-   res.end(data);
-});
-app.get('/NaN|0', function(req, res) {
-   var data = readFileSync("./level7.html");
-   res.end(data);
-});
-app.get('/31337', function(req, res) {
-   var data = readFileSync("./level8.html");
-   res.end(data);
-});
-app.get('/All_of_them_can_be_used_as_backend', function(req, res) {
-   var data = readFileSync("./level9.html");
-   res.end(data);
-});
-app.get('/ajax', function(req, res) {
-   var data = readFileSync("./level10.html");
-   res.end(data);
-});
-app.get('/w3ll_d0n3', function(req, res) {
-   var data = readFileSync("./congrats.html");
-   res.end(data);
-});
 app.post('/31337', function(req, res) {
    if ( req.body.Go != undefined) {
       var data = readFileSync("./answer.html");
@@ -92,14 +27,25 @@ app.post('/31337', function(req, res) {
       res.end(data);
    }
 });
+
+
 app.get('*', function(req, res) {
-   res.writeHead(404, {'Content-Type': 'text/html'})
-   var data = readFileSync("./err.html");
-   res.end(data);
+   var route = req.params[0];
+   connection.query('SELECT `PATH` FROM `ANSWER` WHERE `ROUTE` = "' + route + '"', function (error, results, fields) {
+      if (error) throw error;
+      if (results.length > 0) {
+         var data = readFileSync("./" + results[0].PATH);
+         res.end(data);
+      } else {
+         res.writeHead(404, {'Content-Type': 'text/html'})
+         var data = readFileSync("./err.html");
+         res.end(data);
+      }
+   });
 });
 
 
 
-app.listen("80",()=>{
-    console.log("serv running on http://127.0.0.1:80");
+app.listen("1234",()=>{
+    console.log("serv running on http://127.0.0.1:1234");
 });
