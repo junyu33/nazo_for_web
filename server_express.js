@@ -10,9 +10,9 @@ app.use(bodyParser());
 
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : '20.191.185.135',
+  host     : '0.0.0.0', // set your own ip
   user     : 'root',
-  password : 'KCrsax4aesEydYeH',
+  password : 'P@ssw0rd', // no longer used
   database : 'nazo_answer'
 });
 
