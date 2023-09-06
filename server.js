@@ -117,6 +117,6 @@ serv.on("request",(req,res)=>{
 });
 
 
-serv.listen("80",()=>{
-    console.log("serv running on http://127.0.0.1:80");
+serv.listen("1234",()=>{
+    console.log("serv running on http://127.0.0.1:1234");
 });
