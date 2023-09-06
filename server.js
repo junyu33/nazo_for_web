@@ -68,6 +68,14 @@ serv.on("request",(req,res)=>{
             var data = readFileSync("./level7.html");
             res.end(data);
             break;
+        case "/NaN^0":
+            var data = readFileSync("./level7.html");
+            res.end(data);
+            break;
+        case "/NaN=0":
+            var data = readFileSync("./level7.html");
+            res.end(data);
+            break;
         case "/31337":
             var data = readFileSync("./level8.html");
             break;
@@ -75,7 +83,7 @@ serv.on("request",(req,res)=>{
             var data = readFileSync("./level9.html");
             res.end(data);
             break;
-        case "/ajax":
+        case "/nodejs_flex_reverse_proxy":
             var data = readFileSync("./level10.html");
             res.end(data);
             break;
