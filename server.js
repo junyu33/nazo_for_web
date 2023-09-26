@@ -40,7 +40,7 @@ serv.on("request",(req,res)=>{
             var data = readFileSync("./level1.html");
             res.end(data);
             break;
-        case "/2007":
+        case "/2008":
             var data = readFileSync("./level2.html");
             res.end(data)
             break;
@@ -68,6 +68,14 @@ serv.on("request",(req,res)=>{
             var data = readFileSync("./level7.html");
             res.end(data);
             break;
+        case "/NaN^0":
+            var data = readFileSync("./level7.html");
+            res.end(data);
+            break;
+        case "/NaN=0":
+            var data = readFileSync("./level7.html");
+            res.end(data);
+            break;
         case "/31337":
             var data = readFileSync("./level8.html");
             break;
@@ -75,7 +83,7 @@ serv.on("request",(req,res)=>{
             var data = readFileSync("./level9.html");
             res.end(data);
             break;
-        case "/ajax":
+        case "/nodejs_flex_reverse_proxy":
             var data = readFileSync("./level10.html");
             res.end(data);
             break;
@@ -109,6 +117,6 @@ serv.on("request",(req,res)=>{
 });
 
 
-serv.listen("80",()=>{
-    console.log("serv running on http://127.0.0.1:80");
+serv.listen("1234",()=>{
+    console.log("serv running on http://127.0.0.1:1234");
 });

@@ -8,7 +8,7 @@ the backend is at `nazo_level10_docker`
 
 ```bash
 npm install express
-nohup node server_express.js & 
+nohup node server.js & 
 ```
 
 Access your site at `localhost:1234`

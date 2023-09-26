@@ -748,3 +748,347 @@ Emitted 'error' event at:
 Wed, 07 Dec 2022 03:31:08 GMT body-parser deprecated bodyParser: use individual json/urlencoded middlewares at server_express.js:9:9
 Wed, 07 Dec 2022 03:31:08 GMT body-parser deprecated undefined extended: provide extended option at node_modules/body-parser/index.js:104:29
 serv running on http://127.0.0.1:80
+Wed, 07 Dec 2022 08:30:48 GMT body-parser deprecated bodyParser: use individual json/urlencoded middlewares at server_express.js:9:9
+Wed, 07 Dec 2022 08:30:48 GMT body-parser deprecated undefined extended: provide extended option at node_modules/body-parser/index.js:104:29
+serv running on http://127.0.0.1:80
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:585:18)
+    at next (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/index.js:226:15)
+    at urlencodedParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:110:7
+    at jsonParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:110:7)
+    at bodyParser (/www/wwwroot/nazo_for_web/node_modules/body-parser/index.js:108:5)
+    at Layer.handle [as handle_request] (/www/wwwroot/nazo_for_web/node_modules/express/lib/router/layer.js:95:5)
+SyntaxError: Unexpected token - in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:160:10)
+    at parse (/www/wwwroot/nazo_for_web/node_modules/body-parser/lib/types/json.js:83:15)
+    at /www/wwwroot/nazo_for_web/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (async_hooks.js:188:21)
+    at invokeCallback (/www/wwwroot/nazo_for_web/node_modules/raw-body/index.js:231:16)
+    at done (/www/wwwroot/nazo_for_web/node_modules/raw-body/index.js:220:7)
+    at IncomingMessage.onEnd (/www/wwwroot/nazo_for_web/node_modules/raw-body/index.js:280:7)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
