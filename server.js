@@ -1,122 +1,78 @@
-const { readFileSync, rmSync } = require("fs");
+const { readFileSync } = require("fs");
 const http = require("http");
 const url = require("url");
+const querystring = require("querystring");
 
-var serv=http.createServer();
-var request = require('request');
-var querystring = require('querystring');
-var util = require('util');
+const serv = http.createServer();
 
-serv.on("request",(req,res)=>{
-    var pathName=url.parse(req.url).pathname;
+// Helper function to serve files with error handling
+function serveFile(res, filePath, contentType = "text/html", statusCode = 200) {
+    try {
+        const data = readFileSync(filePath);
+        res.writeHead(statusCode, { "Content-Type": contentType });
+        res.end(data);
+    } catch (error) {
+        res.writeHead(500);
+        res.end("Internal Server Error");
+    }
+}
+
+serv.on("request", (req, res) => {
+    const pathName = url.parse(req.url).pathname;
     console.log(pathName);
 
-    switch(pathName){
-        case "/":
-            var data = readFileSync("./index.html");
-            res.end(data);
-            break;
-        case "/css/style.css":
-            var data = readFileSync("./css/style.css");
-            res.end(data);
-            break;
-        case "/img/code.png":
-            var data = readFileSync("./img/code.png");
-            res.end(data);
-            break;
-        case "/img/level10.png":
-            var data = readFileSync("./img/level10.png");
-            res.end(data);
-            break;
-        case "/js/ajax.js":
-            var data = readFileSync("./js/ajax.js");
-            res.end(data);
-            break;
-        case "/favicon.ico":
-            var data = readFileSync("./favicon.ico");
-            res.end(data);
-            break;
-        case "/level1":
-            var data = readFileSync("./level1.html");
-            res.end(data);
-            break;
-        case "/2008":
-            var data = readFileSync("./level2.html");
-            res.end(data)
-            break;
-        case "/class":
-            var data = readFileSync("./level3.html");
-            res.end(data)
-            break;
-        case "/Lucida_Console":
-            var data = readFileSync("./level4.html");
-            res.end(data);
-            break;
-        case "/80439751":
-            var data = readFileSync("./level5.html");
-            res.end(data);
-            break;
-        case "/absolute":
-            var data = readFileSync("./level6.html");
-            res.end(data);
-            break;
-        case "/NaN&0":
-            var data = readFileSync("./level7.html");
-            res.end(data);
-            break;
-        case "/NaN|0":
-            var data = readFileSync("./level7.html");
-            res.end(data);
-            break;
-        case "/NaN^0":
-            var data = readFileSync("./level7.html");
-            res.end(data);
-            break;
-        case "/NaN=0":
-            var data = readFileSync("./level7.html");
-            res.end(data);
-            break;
-        case "/31337":
-            var data = readFileSync("./level8.html");
-            break;
-        case "/All_of_them_can_be_used_as_backend":
-            var data = readFileSync("./level9.html");
-            res.end(data);
-            break;
-        case "/nodejs_flex_reverse_proxy":
-            var data = readFileSync("./level10.html");
-            res.end(data);
-            break;
-        case "/w3ll_d0n3":
-            var data = readFileSync("./congrats.html");
-            res.end(data);
-            break;
-        default:
-            var data = readFileSync("./err.html");
-            res.writeHead(404, {"Content-Type":"text/html; charset=utf-8"});
-            res.end(data);
-            break;  
-    }
-    
-    var post = '';     
-    req.on('data', function(chunk){    
-        post += chunk;
-    });
- 
-    req.on('end', function(){    
-        post = querystring.parse(post);
-        if ( post.Go != undefined) {
-            var data = readFileSync("./answer.html");
-            res.end(data);
-        } else {
-            var data = readFileSync("./level8.html");
-            res.end(data);
+    // Handle GET requests
+    if (req.method === "GET") {
+        switch (pathName) {
+            case "/": return serveFile(res, "./index.html");
+            case "/css/style.css": return serveFile(res, "./css/style.css", "text/css");
+            case "/img/code.png": return serveFile(res, "./img/code.png", "image/png");
+            case "/img/level10.png": return serveFile(res, "./img/level10.png", "image/png");
+            case "/js/ajax.js": return serveFile(res, "./js/ajax.js", "application/javascript");
+            case "/favicon.ico": return serveFile(res, "./favicon.ico", "image/x-icon");
+            case "/level1": return serveFile(res, "./level1.html");
+            case "/2008": return serveFile(res, "./level2.html");
+            case "/class": return serveFile(res, "./level3.html");
+            case "/Lucida_Console": return serveFile(res, "./level4.html");
+            case "/80439751": return serveFile(res, "./level5.html");
+            case "/absolute": return serveFile(res, "./level6.html");
+            case "/31337": return serveFile(res, "./level8.html");
+            case "/All_of_them_can_be_used_as_backend": return serveFile(res, "./level9.html");
+            case "/nodejs_flex_reverse_proxy": return serveFile(res, "./level10.html");
+            case "/w3ll_d0n3": return serveFile(res, "./congrats.html");
+            
+            // Handle multiple NaN routes
+            case "/NaN&0":
+            case "/NaN|0":
+            case "/NaN^0":
+            case "/NaN=0":
+                return serveFile(res, "./level7.html");
+            
+            default:
+                return serveFile(res, "./err.html", "text/html", 404);
         }
+    }
+
+    // Handle POST requests
+    if (req.method === "POST") {
+        let postData = "";
+        req.on("data", chunk => postData += chunk);
+        req.on("end", () => {
+            const post = querystring.parse(postData);
+            if (post.R) {
+                serveFile(res, "./answer.html");
+            } else {
+                serveFile(res, "./level8.html");
+            }
+        });
         return;
-    });
+    }
+
+    // Handle unsupported methods
+    res.writeHead(405);
+    res.end("Method Not Allowed");
 });
 
-
-serv.listen("1234",()=>{
-    console.log("serv running on http://127.0.0.1:1234");
+serv.listen("1234", "0.0.0.0", () => {
+    console.log("Server is running on http://0.0.0.0:1234");
 });
