@@ -5,3 +5,6 @@ __pycache__
 yarn.lock
 .htaccess
 
+
+.vercel
+.env*.local
