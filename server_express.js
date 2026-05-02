@@ -1,3 +1,6 @@
+// Legacy local server.
+// Production deployment uses Vercel Serverless Function: api/index.js.
+// This file is kept for historical reference and is not used by Vercel.
 const { readFileSync } = require("fs");
 const http = require("http");
 const url = require("url");
