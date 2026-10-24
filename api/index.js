@@ -44,7 +44,15 @@ function normalizePath(pathName) {
 }
 
 module.exports = async function handler(req, res) {
-  const pathName = normalizePath(url.parse(req.url).pathname);
+  let pathName;
+  try {
+    pathName = normalizePath(decodeURIComponent(url.parse(req.url).pathname));
+  } catch {
+    res.statusCode = 400;
+    res.setHeader("Content-Type", "text/plain; charset=utf-8");
+    res.end("Bad Request");
+    return;
+  }
 
   if (req.method === "GET") {
     switch (pathName) {
